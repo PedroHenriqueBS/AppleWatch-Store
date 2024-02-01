@@ -1,0 +1,39 @@
+header {
+    height: 50px;
+    margin: 0 25px 50px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.menu__listas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.menu__listas li {
+    cursor: pointer;
+}
+
+.text-listas {
+    font-size: .750rem;
+    font-weight: 300;
+}
+
+.text-listas:hover {
+    color: #343434;
+}
+
+.bi-apple, .bi-search, .bi-bag{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.bar-reverse {
+    display: none;
+}

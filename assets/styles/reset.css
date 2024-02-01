@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: url(../fontes/sanfrancisco/otf/SFNSDisplay-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco';
+    src: url(../fontes/sanfrancisco/otf/SFNSDisplay-Medium.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'San Francisco';
+    src: url(../fontes/sanfrancisco/otf/SFNSDisplay-Light.otf);
+    font-weight: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'San Francisco', arial, sans-serif;
+    list-style: none;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+span, p {
+    font-weight: 300;
+}
+

@@ -1,0 +1,282 @@
+.main__container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 0 25px 0;
+}
+
+/* MAIN LEFT */
+
+.main__infos {
+    width: 21rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main__infos h1 {
+    font-size: 2rem;
+    width: 350px;
+}
+
+/* PREÇOS */
+
+.main__infos__preco {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__infos__preco span:nth-child(2) {
+    color: #0066CC;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.main__infos__preco span:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+.main__infos__preco span:nth-child(2) > b {
+    padding-right: 5px;
+}
+
+.main__infos__preco span:nth-child(3) {
+    font-size: .8rem;
+    color: #333;
+}
+
+/* SELEÇÃO DE CORES */
+
+.main__cores {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__cores ul {
+    display: flex;
+    padding-top: 1.1rem;
+}
+
+.main__cores ul li {
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.main__cores ul li input{
+    display: none;
+}
+
+.main__cores ul li label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 2.625rem;
+    width: 2.625rem;
+}
+
+.main__cores ul li label > img {
+    width: 2rem;
+    mix-blend-mode: color;
+}
+.main__cores ul li input[type='radio']:checked + label {
+    border-radius: 50%;
+    border: 0.125rem solid #0066cc; 
+}
+
+/* SELO CARBONO */
+
+.selo-carbono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.selo-carbono span {
+    font-size: .8rem;
+    color: #404040;
+}
+
+/* TAMANHO DA CAIXA */
+
+.main__tamanho {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selecao__tamanho ul{
+    display: flex;
+    gap: 10px;
+}
+
+.selecao__tamanho ul li input {
+    display: none;
+}
+
+.selecao__tamanho ul li label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 5rem;
+    width: 9rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.selecao__tamanho ul li input[type='radio']:checked + label {
+    border-radius: 10px;
+    border: 2px solid #0066cc;
+}
+
+.tamanho-info {
+    width: 300px;
+}
+
+.tamanho-info span:first-child {
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+
+.tamanho-info span:last-child {
+    font-size: .8rem;
+    color: #0066CC;
+    cursor: pointer;
+}
+
+.tamanho-info span:last-child:hover {
+    text-decoration: underline;
+}
+
+/* TAMANHO DA PULSEIRA TXT*/
+
+.main__tamanho__txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pulseira-info span:first-child {
+    font-size: .8rem;
+}
+
+.pulseira-info span:last-child {
+    font-size: .750rem;
+    color: rgb(111, 111, 111);
+}
+
+/* FRETE */
+
+.main__frete {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.bi-truck {
+    font-size: 1.5rem;
+}
+
+.main__frete__txt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main__frete__txt span {
+    font-size: .9rem;
+}
+
+.main__frete__txt span:first-child {
+    font-weight: normal;
+}
+
+.main__frete__txt span:last-child {
+    color: #0066cc;
+}
+
+.main__frete__txt span:last-child:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* BUTTON */
+
+#btn {
+    padding: 0.45rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #0071e3;
+    color: #fff;
+    text-align: center;
+}
+
+#btn:hover {
+    background-color: #1f85ea;
+}
+
+/* txt final */
+
+.main__txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__txt p {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.main__txt b {
+    margin-right: 10px;
+}
+
+.main__txt span {
+    color: #1f85ea;
+}
+
+.main__txt span:hover {
+    text-decoration: underline;
+}
+
+/* IMAGENS */
+
+#visualizacao {
+    margin-left: 100px;
+}
+
+#selecionar-imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#selecionar-imagem input {
+    display:none;
+}
+
+#selecionar-imagem label > img {
+    width: 3.5rem;
+    padding: 0.25rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    border-bottom: 0.125rem solid hsla(0, 0%, 100%, 0);
+}
+
+#selecionar-imagem label > img:hover {
+    border-color: #e8e8ed;
+}
+
+#selecionar-imagem li input[type='radio']:checked + label > img{
+    border-color: #d2d2d6;
+}
+
+.caixa-pequena {
+    transform: scale(.8);
+}
+

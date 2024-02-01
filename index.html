@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Watch</title>
+    <link rel="shortcut icon" href="assets/images/apple.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/styles/reset.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/responsividade.css">
+    <script src="assets/javascript/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER - MENU -->
+        <header>
+            <nav class="menu">
+                <ul class="menu__listas">
+                    <li class="bi bi-apple"></li>
+                        <li class="text-listas bar">Loja</li>
+                        <li class="text-listas bar">Mac</li>
+                        <li class="text-listas bar">Ipad</li>
+                        <li class="text-listas bar">Iphone</li>
+                        <li class="text-listas bar">Watch</li>
+                        <li class="text-listas bar">Airpods</li>
+                        <li class="text-listas bar">Tv e Casa</li>
+                        <li class="text-listas bar">Entretenimento</li>
+                        <li class="text-listas bar">Acessórios</li>
+                        <li class="text-listas bar">Suporte</li>
+                    <li class="bi bi-search bar"></li>
+                    <li class="bi bi-bag bar"></li>
+                    <i class="bi bi-list bar-reverse"></i>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main__container">
+            <section class="main__infos">
+                <h1 id="titulo">Pulseira loop esportiva Meia-noite para caixa de 45 mm</h1>
+                <div class="main__infos__preco">
+                    <span>R$ 499,90</span>
+                    <span><b class="bi bi-exclamation-circle"></b>Em até 12x de R$ 41,58</span>
+                    <span>R$ 449,10 à vista (10% de desconto)</span>
+                </div>
+                <!-- SELEÇÃO DE CORES -->
+                <div class="main__cores">
+                    <h2 id="span-cores">Cor - Meia-noite</h2>
+                    <ul id="selecao-cores">
+                        <li><input type="radio" name="opcao-cor" id="0-cor" onclick="atualizarCorSelecionada()">
+                        <label for="0-cor"><img src="assets/images/opcoes-cores/verde-cipreste.jpeg" alt=""></label></li>
+                        <li><input type="radio" name="opcao-cor" id="1-cor" onclick="atualizarCorSelecionada()">
+                        <label for="1-cor"><img src="assets/images/opcoes-cores/azul-inverno.jpeg" alt=""></label></li>
+                        <li><input type="radio" name="opcao-cor" id="2-cor" onclick="atualizarCorSelecionada()" checked>
+                        <label for="2-cor"><img src="assets/images/opcoes-cores/meia-noite.jpeg" alt=""></label></li>
+                        <li><input type="radio" name="opcao-cor" id="3-cor" onclick="atualizarCorSelecionada()">
+                        <label for="3-cor"><img src="assets/images/opcoes-cores/estelar.jpeg" alt=""></label></li>
+                        <li><input type="radio" name="opcao-cor" id="4-cor" onclick="atualizarCorSelecionada()">
+                        <label for="4-cor"><img src="assets/images/opcoes-cores/rosa-claro.jpeg" alt=""></label></li>
+                    </ul> 
+                    <div class="selo-carbono">
+                        <img src="assets/images/outros-recursos/neutralidade-c.jpeg" alt="logo do carbon neutral" width="24px">
+                        <span>Carbon Neutral</span>
+                    </div>
+                </div>
+
+                <!-- TAMANHOS -->
+                <div class="main__tamanho">
+                    <h2>Tamanho da caixa</h2>
+                    <div class="selecao__tamanho">
+                        <ul>
+                            <li>
+                                <input type="radio" name="opcao-tamanho" id="0-tamanho" onclick="atualizarTamanho()">
+                                <label for="0-tamanho">41 mm</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="opcao-tamanho" id="1-tamanho" onclick="atualizarTamanho()" checked>
+                                <label for="1-tamanho">45 mm</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tamanho-info">
+                        <span>Compatível com a maioria das versões de Apple Watch.</span><br>
+                        <span>Saiba mais sobre a compatibilidade de pulseiras ›</span>
+                    </div>
+                </div>
+
+                <!-- PULSEIRA -->
+                <div class="main__tamanho__txt">
+                    <h2>Tamanho da pulseira</h2>
+                    <div class="pulseira-info">
+                        <span>Tamanho único (cabe na maioria dos pulsos)</span><br>
+                        <span>Para pulsos de 145 a 220 mm.</span>
+                    </div>
+                </div>
+
+                <!-- FRETE -->
+                <div class="main__frete">
+                    <span class="bi bi-truck"></span>
+                    <div class="main__frete__txt">
+                        <span>Entrega:</span>
+                        <span>Em estoque</span>
+                        <span>Frete grátis</span>
+                        <span>Ver datas de entrega</span>
+                    </div>
+                </div>
+
+                <!-- BUTTON -->
+                <button id="btn">Colocar na sacola</button>
+
+                <!--  TXT FINAL -->
+                <div class="main__txt">
+                    <h2>Precisa de um tempo?</h2>
+                    <p>Mantenha todas as suas seleções salvando este aparelho em Itens salvos. Depois, você pode voltar quando quiser e continuar de onde parou.</p>
+                    <span><b class="bi bi-bookmark"></b>Salvar para depois</span>
+                </div>
+
+            </section>
+            <section class="main__images">
+                <div id="visualizacao">
+                    <img src="assets/images/opcoes-cores/imagens-meia-noite/imagem-1.jpeg" alt="visualizacao da imagem apple watch" id="imagem-visualizacao">
+
+                    <!-- MINIATURAS -->
+                    <ul id="selecionar-imagem">
+                        <li><input type="radio" name="opcao-imagem" id="0-imagem" onclick="atualizarImagemSelecionada()">
+                        <label for="0-imagem">
+                            <img src="assets/images/opcoes-cores/imagens-meia-noite/imagem-0.jpeg" alt="Miniatura da imagem" id="0-imagem-miniatura">
+                        </label></li>
+                        <li><input type="radio" name="opcao-imagem" id="1-imagem" onclick="atualizarImagemSelecionada()" checked >
+                        <label for="1-imagem">
+                            <img src="assets/images/opcoes-cores/imagens-meia-noite/imagem-1.jpeg" alt="Miniatura da imagem" id="1-imagem-miniatura">
+                        </label></li>
+                        <li><input type="radio" name="opcao-imagem" id="2-imagem"
+                        onclick="atualizarImagemSelecionada()">
+                        <label for="2-imagem">
+                            <img src="assets/images/opcoes-cores/imagens-meia-noite/imagem-2.jpeg" alt="Miniatura da imagem" id="2-imagem-miniatura">
+                        </label></li>
+                    </ul>
+
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
