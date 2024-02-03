@@ -31,7 +31,7 @@
                         <li class="text-listas bar">Acessórios</li>
                         <li class="text-listas bar">Suporte</li>
                     <li class="bi bi-search bar"></li>
-                    <li class="bi bi-bag bar"></li>
+                    <li class="bi bi-bag bar"><span id="bag">0</span></li>
                     <i class="bi bi-list bar-reverse"></i>
                 </ul>
             </nav>
@@ -42,8 +42,8 @@
             <section class="main__infos">
                 <h1 id="titulo">Pulseira loop esportiva Meia-noite para caixa de 45 mm</h1>
                 <div class="main__infos__preco">
-                    <span>R$ 499,90</span>
-                    <span><b class="bi bi-exclamation-circle"></b>Em até 12x de R$ 41,58</span>
+                    <span id="precos">R$ 899,90</span>
+                    <span id="precos-cartao"><b class="bi bi-exclamation-circle"></b>Em até 12x de R$ 41,58</span>
                     <span>R$ 449,10 à vista (10% de desconto)</span>
                 </div>
                 <!-- SELEÇÃO DE CORES -->
@@ -109,7 +109,7 @@
                 </div>
 
                 <!-- BUTTON -->
-                <button id="btn">Colocar na sacola</button>
+                <button id="btn" onclick="atualizarBag()">Colocar na sacola</button>
 
                 <!--  TXT FINAL -->
                 <div class="main__txt">

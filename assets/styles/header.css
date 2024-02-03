@@ -37,3 +37,20 @@ header {
 .bar-reverse {
     display: none;
 }
+
+.bi-bag {
+    position: relative;
+}
+
+.bi-bag span {
+    background-color: #343434;
+    color: #fff;
+    border-radius: 40px;
+    font-size: .6rem;
+    padding: 1px;
+    width: 10px;
+    text-align: center;
+    position: absolute;
+    right: -5px;
+    top: -1px;
+}

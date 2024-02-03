@@ -3,32 +3,39 @@ let opcaoImagem0 = document.getElementById('0-imagem-miniatura');
 let opcaoImagem1 = document.getElementById('1-imagem-miniatura');
 let opcaoImagem2 = document.getElementById('2-imagem-miniatura');
 
+let idBag = document.getElementById('bag');
+
 let tituloProduto = document.getElementById('titulo');
 let spanCores = document.getElementById('span-cores');
 
 const verdeCipreste = {
     nome: "Verde-cipreste",
     nomePastaImagens: "imagens-verde-cipreste",
+    preco: "499,90",
 };
 
 const azulInverno = {
     nome: "Azul-Inverno",
     nomePastaImagens: "imagens-azul-inverno",
+    preco: "549,90",
 };
 
 const meiaNoite = {
     nome: "Meia-noite",
     nomePastaImagens: "imagens-meia-noite",
+    preco: "899,90",
 };
 
 const estelar = {
     nome: "Estelar",
     nomePastaImagens: "imagens-estelar",
+    preco: "499,90",
 };
 
 const rosaClaro = {
     nome: "Rosa-claro",
     nomePastaImagens: "imagens-rosa-claro",
+    preco: "519,19",
 };
 
 const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro];
@@ -61,6 +68,12 @@ function atualizarCorSelecionada(){
     spanCores.innerText = `Cor - ${opcoesCores[corSelecionada].nome}`
 
     imagemVisualizacao.src = `assets/images/opcoes-cores/${opcoesCores[corSelecionada].nomePastaImagens}/imagem-${imagemSelecionada}.jpeg`;
+
+    // ATUALIZANDO O PREÇO
+    let idPreco = document.getElementById('precos');
+    idPreco.innerText = `R$ ${opcoesCores[corSelecionada].preco}`
+    let idPrecoCartao = document.getElementById('precos-cartao');
+    idPrecoCartao.innerText = `Em até 12x de R$ ${opcoesCores[corSelecionada].preco}`
 }
 
 //ATUALIZANDO TAMANHO
@@ -78,3 +91,12 @@ function atualizarTamanho(){
     }
 }
 
+// ATUALIZANDO BAG
+let contador = 0;
+idBag.innerHTML = contador;
+function atualizarBag(){
+    if (contador >= 0){
+        contador ++;
+        idBag.innerHTML = contador;
+    }
+}
