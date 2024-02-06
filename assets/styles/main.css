@@ -30,14 +30,11 @@
     color: #0066CC;
     font-size: .8rem;
     cursor: pointer;
+    padding-left: 3px;
 }
 
 .main__infos__preco span:nth-child(2):hover {
     text-decoration: underline;
-}
-
-.main__infos__preco span:nth-child(2) > b {
-    padding-right: 5px;
 }
 
 .main__infos__preco span:nth-child(3) {

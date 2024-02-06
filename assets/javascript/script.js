@@ -12,30 +12,40 @@ const verdeCipreste = {
     nome: "Verde-cipreste",
     nomePastaImagens: "imagens-verde-cipreste",
     preco: "499,90",
+    cartao: "41,65",
+    avista: "449,91",
 };
 
 const azulInverno = {
     nome: "Azul-Inverno",
     nomePastaImagens: "imagens-azul-inverno",
     preco: "549,90",
+    cartao: "45,85",
+    avista: "494,91",
 };
 
 const meiaNoite = {
     nome: "Meia-noite",
     nomePastaImagens: "imagens-meia-noite",
     preco: "899,90",
+    cartao: "74,99",
+    avista: "809,91",
 };
 
 const estelar = {
     nome: "Estelar",
     nomePastaImagens: "imagens-estelar",
     preco: "499,90",
+    cartao: "41,65",
+    avista: "449,91",
 };
 
 const rosaClaro = {
     nome: "Rosa-claro",
     nomePastaImagens: "imagens-rosa-claro",
     preco: "519,19",
+    cartao: "43,25",
+    avista: "467,25",
 };
 
 const opcoesCores = [verdeCipreste, azulInverno, meiaNoite, estelar, rosaClaro];
@@ -73,7 +83,10 @@ function atualizarCorSelecionada(){
     let idPreco = document.getElementById('precos');
     idPreco.innerText = `R$ ${opcoesCores[corSelecionada].preco}`
     let idPrecoCartao = document.getElementById('precos-cartao');
-    idPrecoCartao.innerText = `Em até 12x de R$ ${opcoesCores[corSelecionada].preco}`
+    idPrecoCartao.innerText = `Em até 12x de R$ ${opcoesCores[corSelecionada].cartao} sem juros`
+    let idPrecoAvista = document.getElementById('precos-avista');
+    idPrecoAvista.innerText = `R$ ${opcoesCores[corSelecionada].avista} à vista (10% de desconto)`
+    
 }
 
 //ATUALIZANDO TAMANHO
