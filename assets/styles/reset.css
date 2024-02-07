@@ -37,3 +37,7 @@ span, p {
     font-weight: 300;
 }
 
+ol, ul {
+  padding-left: 0px; 
+}
+

@@ -2,11 +2,15 @@ let imagemVisualizacao = document.getElementById('imagem-visualizacao');
 let opcaoImagem0 = document.getElementById('0-imagem-miniatura');
 let opcaoImagem1 = document.getElementById('1-imagem-miniatura');
 let opcaoImagem2 = document.getElementById('2-imagem-miniatura');
-
+let logo = document.getElementById('logo')
 let idBag = document.getElementById('bag');
 
 let tituloProduto = document.getElementById('titulo');
 let spanCores = document.getElementById('span-cores');
+
+logo.addEventListener('click', () => {
+    location.reload();
+})
 
 const verdeCipreste = {
     nome: "Verde-cipreste",

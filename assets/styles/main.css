@@ -6,7 +6,6 @@
 }
 
 /* MAIN LEFT */
-
 .main__infos {
     width: 21rem;
     display: flex;
@@ -16,11 +15,10 @@
 
 .main__infos h1 {
     font-size: 2rem;
-    width: 350px;
+    width: 335px;
 }
 
 /* PREÇOS */
-
 .main__infos__preco {
     display: flex;
     flex-direction: column;
@@ -43,6 +41,10 @@
 }
 
 /* SELEÇÃO DE CORES */
+
+#selecao-cores {
+    z-index: 0;
+}
 
 .main__cores {
     display: flex;
@@ -73,7 +75,7 @@
 
 .main__cores ul li label > img {
     width: 2rem;
-    mix-blend-mode: color;
+    mix-blend-mode: darken;
 }
 .main__cores ul li input[type='radio']:checked + label {
     border-radius: 50%;
@@ -81,7 +83,6 @@
 }
 
 /* SELO CARBONO */
-
 .selo-carbono {
     display: flex;
     flex-direction: row;
@@ -94,7 +95,6 @@
 }
 
 /* TAMANHO DA CAIXA */
-
 .main__tamanho {
     display: flex;
     flex-direction: column;
@@ -146,7 +146,6 @@
 }
 
 /* TAMANHO DA PULSEIRA TXT*/
-
 .main__tamanho__txt {
     display: flex;
     flex-direction: column;
@@ -163,7 +162,6 @@
 }
 
 /* FRETE */
-
 .main__frete {
     display: flex;
     flex-direction: row;
@@ -198,7 +196,6 @@
 }
 
 /* BUTTON */
-
 #btn {
     padding: 0.45rem;
     font-size: 1.1rem;
@@ -216,7 +213,6 @@
 }
 
 /* txt final */
-
 .main__txt {
     display: flex;
     flex-direction: column;
@@ -241,11 +237,6 @@
 }
 
 /* IMAGENS */
-
-#visualizacao {
-    margin-left: 100px;
-}
-
 #selecionar-imagem {
     display: flex;
     flex-direction: row;
@@ -277,3 +268,6 @@
     transform: scale(.8);
 }
 
+.bi-search, .bi-bag {
+    cursor: pointer;
+}

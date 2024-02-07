@@ -1,42 +1,26 @@
 header {
-    width: 100%;
-    height: 50px;
-    margin: 0 25px 50px;
+    width:  100%;
+    height: 100px;
+    padding: 0 10px;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    padding: 15px 0 10px;
+#logo {
+    vertical-align: baseline;
+    width: 1.3rem;
+    height: 1.3rem;
 }
 
-.menu__listas {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.container-fluid {
+    padding-right: 10px;
 }
 
-.menu__listas li {
-    cursor: pointer;
+.nav-link {
+    font-size: .8rem;
+    color: rgb(80, 80, 80);
 }
 
-.text-listas {
-    font-size: .750rem;
-    font-weight: 300;
-}
-
-.text-listas:hover {
-    color: #343434;
-}
-
-.bi-apple, .bi-search, .bi-bag{
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.bar-reverse {
-    display: none;
+.nav-link:hover {
+    color: rgb(29, 29, 29);
 }
 
 .bi-bag {
@@ -48,10 +32,48 @@ header {
     color: #fff;
     border-radius: 40px;
     font-size: .6rem;
-    padding: 1px;
     width: 10px;
     text-align: center;
     position: absolute;
     right: -5px;
     top: -1px;
+}
+
+.navbar-toggler {
+    border: none;
+    border-radius: none;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-collapse {
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler-icon {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.bi-list, .bi-apple {
+    font-size: 2rem;
+    cursor: pointer;
 }
